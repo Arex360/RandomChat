@@ -1,0 +1,14 @@
+{
+    "Accounts":{
+        "number1": "owais"
+    },
+    "AdditionalInfo":{
+        "owais":{
+            "username": "owais",
+            "password": "addon1234",
+            "longitutde": "26298762",
+            "latitude": "2312312",
+            "Avatar": "ssdkjhdsk"
+        }
+    }
+}

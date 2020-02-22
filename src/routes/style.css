@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+.i1{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f7f3f2
+}
+.avatar {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: -10%;
+    left: 33%;
+    border-radius: 50%;
+    box-shadow: black;
+}
+.pic{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.name,.pin{
+    position: relative;
+    margin-bottom: 25px;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: #8c8482 solid 2px;
+    outline: none;
+    
+}
+.uploads{
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+label{
+    color: purple;
+    font-weight: bold;
+}
+.label{
+    position: absolute;
+    width: 100%;
+}
+.result{
+    position: absolute;
+    top: -180px;
+    left: -120px;
+    font-weight: bold;
+}
+.btn{
+    cursor: pointer;
+}
+#upload{
+  margin-left: 50px;
+  margin-top: 20px;  
+  content: 'Select some files';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+
+}
+.btn{
+    position: relative;
+    top: 50%;
+    left: 30%;
+    margin-left: 10px;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 30%;
+    background-color: purple;
+}
+.label{
+    position: absolute;
+    color: red;
+    top: 44%;
+    left: 60%;
+    padding: 0px;
+    margin: 0px;
+}
+@media screen and (max-width:1350px){
+    .form{
+    }
+    .avatar{
+        left: 27%;
+    }
+}
+@media screen and (max-width:1168px){
+    .form{
+        height: 40%;
+    }
+    .avatar{
+        left: 20%;
+
+    }
+}
+@media screen and (max-width:891px){
+    
+    .avatar{
+        left: 30%;
+    }
+}
+@media screen and (max-width:361px){
+    .form{
+        position: absolute;
+    }
+    .btn{
+        width: 50%;
+    }
+    .label{
+        margin: 7px;
+        left: 30%;
+    }
+    .avatar{
+        position: absolute;
+        left: 100px;
+    }
+}
+.fa-key{
+    position: absolute;
+    top: 30%;
+    color: purple;
+    left: 2%;
+}
+.fa-lock{
+    position: absolute;
+    top: 39%;
+    left: 3%;
+    color: purple;
+}
+@media screen and (max-width:480px){
+    
+    .avatar{
+        left: 26%;
+        height: 80px;
+        width: 80px;
+        top: -40px;
+    }
+}
+@media screen and (max-width: 900px){
+    .form{
+        position: absolute;
+        width: 40%;
+        height: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #f7f3f2
+    }
+}
