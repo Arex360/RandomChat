@@ -5,8 +5,11 @@ import profile from './assets/picture.jpg'
 import Firebase from 'firebase'
 import config from './config'
 import wall from './assets/wallpaper.png'
+import {Link} from 'react-router-dom'
 import { register } from '../serviceWorker'
-
+class Test{
+    static a = 10
+}
 class Signup extends Component {
     lat = null
     long = 2
@@ -15,6 +18,7 @@ class Signup extends Component {
     constructor(){
         super()
         this.getLocation()
+        if(!Firebase.apps.length)
         Firebase.initializeApp(config)
         this.state={
             name: 'Register',
@@ -25,9 +29,17 @@ class Signup extends Component {
             Avatar: profile,
             msg: '',
             infoName: '',
-            message: ''
+            message: '',
+            width: window.innerWidth
         }
         this.check()
+        window.addEventListener('resize',()=>{
+            var x = window.innerWidth
+            var y = window.innerHeight
+            this.setState({
+                width: window.innerWidth
+            })
+        })
     }
     mHandler = event =>{
         this.setState({
@@ -48,6 +60,10 @@ class Signup extends Component {
         this.setState({
             name: event.target.value,
         })
+    }
+    test(){
+        Test.a = 100
+        console.log(Test.a)
     }
     getData(){
         var data = Firebase.database().ref().child('Accounts/account')
@@ -192,6 +208,7 @@ class Signup extends Component {
     render() {
         return (
             <div className="main">
+                <p>{this.state.width}</p>
                 <div className="image">
                     <img src={wall} alt="" className="i1"/>
                 </div>
@@ -203,7 +220,6 @@ class Signup extends Component {
                     <br/>
                     <input onChange={this.pHandler} type="password" placeholder="Enter the password" className="pin"/>
                     <br/>
-                    <input onChange={this.mHandler} type="text" placeholder="Send Message" className="pin"/>
                     <div className="uploads">
                         <label htmlFor=""></label>
                         <input onChange={this.onChangeHandler.bind(this)} type="file" id="upload"/>
@@ -212,7 +228,11 @@ class Signup extends Component {
         <p className="result">{this.state.msg}</p>
                     </div>
                     <button onClick={this.submit} className="btn">Register</button>
-                    <button onClick={this.received} className="btn">Register</button>
+                    <br>
+                    </br>
+                    <Link to="/signin">
+                    <button  className="btn">Login</button>
+                    </Link>
                 </div>
             </div>
     )

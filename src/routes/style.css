@@ -92,8 +92,8 @@ label{
 .btn{
     position: relative;
     top: 50%;
-    left: 30%;
-    margin-left: 10px;
+    left: 50%;
+    margin-bottom: 10px;
     transform: translate(-50%,-50%);
     outline: none;
     border: none;
@@ -179,5 +179,138 @@ label{
         left: 50%;
         transform: translate(-50%,-50%);
         background-color: #f7f3f2
+    }
+}
+@media screen and (max-width: 1110px){
+    .avatar {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -10%;
+        left: 27%;
+        border-radius: 50%;
+        box-shadow: black;
+    }
+}
+@media screen and (max-width: 850px){
+    .avatar {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        top: -10%;
+        left: 50%;
+        margin-left: 10%;
+        border-radius: 50%;
+        box-shadow: black;
+    }
+}
+@media screen and (max-width: 1770px){
+    #upload{
+        margin-left: 2%;
+        margin-top: 30px;  
+        content: 'Select some files';
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 3px;
+        padding: 3px 1px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+}
+@media screen and (max-width: 1470px){
+    #upload{
+        margin-left: -3%;
+        margin-top: 30px;  
+        content: 'Select some files';
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: 1px solid #999;
+        border-radius: 2px;
+        padding: 4px 0px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+}
+@media screen and (max-width: 1245px){
+    #upload{
+        margin-left: -3%;
+        margin-top: 30px;  
+        content: 'Select some files';
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: none;
+        border-radius: 2px;
+        padding: 4px 0px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+}
+@media screen and (max-width: 1030px){
+    #upload{
+        margin-left: -3%;
+        margin-top: 60px;  
+        content: 'Select some files';
+        display: inline-block;
+        background: linear-gradient(top, #f9f9f9, #e3e3e3);
+        border: none;
+        border-radius: 2px;
+        padding: 4px 0px;
+        outline: none;
+        white-space: nowrap;
+        -webkit-user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #fff;
+        font-weight: 700;
+        font-size: 10pt;
+      }
+      .avatar {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: -10%;
+        left: 24%;
+        border-radius: 50%;
+        box-shadow: black;
+    }
+}
+@media screen and (max-width:370px){
+    .avatar {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: -10%;
+        left: 20%;
+        border-radius: 50%;
+        box-shadow: black;
+    }
+    .form{
+        height: 350px;
+        width: 200px;
+    }
+    .btn{
+        width: 70px;
+        margin-left: 2px;
+    }
+}
+@media screen and (max-width:350px){
+    .image{
+        width: 104%;
+        height: 20%;
     }
 }
